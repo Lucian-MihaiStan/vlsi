@@ -1,5 +1,5 @@
 // DSCH 3.5
-// 5/11/2023 1:03:05 AM
+// 5/11/2023 4:17:51 PM
 // C:\Users\stanl\Documents\Univeristy\vlsi\dsch3.5\MUX_4_1.sch
 
 module MUX_4_1( I0,S0,I1,I2,I3,S1,out1);

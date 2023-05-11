@@ -1,0 +1,50 @@
+USER SYMBOL by DSCH 3.5
+DATE 5/11/2023 5:35:56 PM
+SYM  #MUX_8_1_cascade
+BB(0,0,40,120)
+TITLE 10 -7  #MUX_8_1_cascade
+MODEL 6000
+REC(5,5,30,110)
+PIN(0,110,0.00,0.00)in1
+PIN(0,80,0.00,0.00)in2
+PIN(0,70,0.00,0.00)in3
+PIN(0,60,0.00,0.00)in4
+PIN(0,50,0.00,0.00)in5
+PIN(0,40,0.00,0.00)in6
+PIN(0,30,0.00,0.00)in7
+PIN(0,20,0.00,0.00)in8
+PIN(0,10,0.00,0.00)in9
+PIN(0,100,0.00,0.00)in10
+PIN(0,90,0.00,0.00)in11
+PIN(40,10,2.00,1.00)out1
+LIG(0,110,5,110)
+LIG(0,80,5,80)
+LIG(0,70,5,70)
+LIG(0,60,5,60)
+LIG(0,50,5,50)
+LIG(0,40,5,40)
+LIG(0,30,5,30)
+LIG(0,20,5,20)
+LIG(0,10,5,10)
+LIG(0,100,5,100)
+LIG(0,90,5,90)
+LIG(35,10,40,10)
+LIG(5,5,5,115)
+LIG(5,5,35,5)
+LIG(35,5,35,115)
+LIG(35,115,5,115)
+VLG module MUX_8_1_cascade( in1,in2,in3,in4,in5,in6,in7,in8,
+VLG  in9,in10,in11,out1);
+VLG  input in1,in2,in3,in4,in5,in6,in7,in8;
+VLG  input in9,in10,in11;
+VLG  output out1;
+VLG  wire w5,w8,w11,w14,w16,w17,;
+VLG  mux #(1) mux_1(w5,in6,in7,in1);
+VLG  mux #(1) mux_2(w8,in4,in5,in1);
+VLG  mux #(1) mux_3(w11,in8,in9,in1);
+VLG  mux #(1) mux_4(w14,in10,in11,in1);
+VLG  mux #(1) mux_5(w16,w11,w14,in2);
+VLG  mux #(1) mux_6(w17,w8,w5,in2);
+VLG  mux #(1) mux_7(out1,w17,w16,in3);
+VLG endmodule
+FSYM

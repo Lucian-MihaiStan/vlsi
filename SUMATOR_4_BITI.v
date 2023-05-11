@@ -1,5 +1,5 @@
 // DSCH 3.5
-// 5/11/2023 12:02:28 AM
+// 5/11/2023 8:06:04 PM
 // C:\Users\stanl\Documents\Univeristy\vlsi\dsch3.5\SUMATOR_4_BITI.sch
 
 module SUMATOR_4_BITI( CIN,A1,B1,A4,B4,A2,B2,A3,
@@ -44,7 +44,7 @@ module SUMATOR_4_BITI( CIN,A1,B1,A4,B4,A2,B2,A3,
  xor #(3) xor2_28(S4,w41,w38);
  not #(1) inv_29(w39,w25);
  assign w46=w40&w31&w13&w15&w3;
- assign w47=w14&w40&w31&w13&vss;
+ assign w47=w14&w40&w31&w13&OP[3];
  and #(3) and3_30(w48,w7,w40,w31);
  and #(3) and2_31(w49,w40,w32);
  assign w44=w25|w49|w48|w47|w46;
